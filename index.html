@@ -1,0 +1,13 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abriendo la votación…</title>
+<p id="m">Abriendo la votación…</p>
+<script>
+var codigo = location.hash.slice(1);
+if (codigo) {
+  location.replace("https://docs.google.com/forms/d/e/1FAIpQLSck0Kb-KpHZ0jPu1eWEhOQQpwcOTuHFPc_l3IZqmcEXzEhM6Q/viewform?usp=pp_url&entry.1141723225=" + encodeURIComponent(codigo));
+} else {
+  document.getElementById("m").textContent = "Escanea el QR de tu pulsera.";
+}
+</script>
